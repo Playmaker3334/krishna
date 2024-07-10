@@ -427,6 +427,18 @@ footer {
     border: 0;
 }
 
+::selection {
+    background: #bc0780; /* Color de fondo rosa */
+    color: white; /* Color del texto */
+}
+
+/* Para navegadores webkit */
+::-moz-selection {
+    background: #bc0780; /* Color de fondo rosa */
+    color: white; /* Color del texto */
+}
+
+
 
 
 
