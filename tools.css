@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #16191d;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-y: auto;
+}
+
+.tools-section {
+    margin: 100px auto; /* Incrementar el margen superior para más separación del menú */
+    width: 60%;
+    text-align: center;
+}
+
+.tools-section h2 {
+    font-size: 18px; /* Reducir tamaño de la tipografía del título */
+    color: #bc0780;
+    margin-bottom: 50px; /* Aumentar el margen inferior para más separación entre secciones */
+}
+
+.tool-container {
+    display: flex;
+    justify-content: center; /* Centrar los íconos */
+    flex-wrap: wrap;
+    gap: 30px; /* Reducir la separación entre los contenedores */
+}
+
+.tool {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.tool img, .tool svg {
+    width: 60px; /* Reducir tamaño de las imágenes */
+    height: 60px; /* Reducir tamaño de las imágenes */
+}
+
+.tool a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tool:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el pie de página */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-text {
+    font-size: 12px; /* Tamaño de fuente reducido */
+    margin: 5px 0;
+    color: #868e96; /* Mismo color que el resto del texto */
+}
+
+.footer-text a {
+    color: #868e96; /* Color del enlace */
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .tools-section {
+        width: 90%;
+    }
+
+    .tool {
+        width: 45%;
+    }
+
+    .footer-text {
+        font-size: 10px; /* Reduce aún más el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .tools-section {
+        width: 100%;
+    }
+
+    .tool {
+        width: 100%;
+    }
+
+    .tool img, .tool svg {
+        width: 50px; /* Reducir tamaño de las imágenes en pantallas pequeñas */
+        height: 50px; /* Reducir tamaño de las imágenes en pantallas pequeñas */
+    }
+
+    .footer-text {
+        font-size: 8px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

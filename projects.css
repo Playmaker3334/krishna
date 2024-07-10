@@ -1,0 +1,337 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #16191d;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-y: auto;
+}
+
+/* Contenedor de la publicación */
+.post-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Contenedor principal de la publicación */
+.post-container {
+    background-color: #16191d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* Efecto hover para el contenedor de la publicación */
+.post-container:hover {
+    background-color: #1e2228;
+}
+
+/* Encabezado de la publicación */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Imagen de perfil de la publicación */
+.post-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Detalles de la publicación */
+.post-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Nombre de usuario de la publicación */
+.post-username {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Separación entre el nombre y la fecha */
+.post-username span {
+    margin-left: 10px;
+}
+
+/* Indicador de usuario verificado */
+.post-verified {
+    color: #fbbc05;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Fecha de la publicación */
+.post-date {
+    color: #868e96;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 0; /* Asegura que esté alineado con el nombre de usuario */
+}
+
+/* Estado de la publicación */
+.post-status {
+    background-color: #3a3f47;
+    border-radius: 20px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+/* Encabezado del contenido de la publicación */
+.post-content h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Texto del contenido de la publicación */
+.post-content p {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Hashtags de la publicación */
+.post-hashtags {
+    color: #bc0780;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* Efecto hover para los hashtags de la publicación */
+.post-hashtags:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de la imagen del proyecto */
+.project-img-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Incrementa el ancho máximo de la imagen */
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer; /* Cambia el cursor cuando se pasa el mouse sobre la imagen */
+}
+
+/* Imagen de la publicación */
+.post-img {
+    width: 100%;
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    max-height: 700px; /* Incrementa la altura máxima de la imagen */
+    border-radius: 10px;
+    margin-top: 10px; /* Ajusta el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+/* Detalles del proyecto */
+.project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    color: white;
+}
+
+/* Efecto hover para la imagen del proyecto */
+.project-img-container:hover .post-img {
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+
+/* Efecto hover para los detalles del proyecto */
+.project-img-container:hover .project-details {
+    opacity: 1;
+}
+
+/* Encabezado y párrafo de los detalles del proyecto */
+.project-details h2, .project-details p {
+    margin: 5px 0;
+}
+
+/* Efecto hover para el contenedor de la imagen del proyecto */
+.project-img-container:hover {
+    cursor: pointer;
+}
+
+/* Pie de la publicación */
+.post-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Iconos del pie de la publicación */
+.post-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Enlace del proyecto */
+.project-img-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Estilos para el pie de página */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-text {
+    font-size: 12px; /* Tamaño de fuente reducido */
+    margin: 5px 0;
+    color: #868e96; /* Mismo color que el resto del texto */
+}
+
+.footer-text a {
+    color: #868e96; /* Color del enlace */
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .post-container {
+        width: 80%; /* Ajusta el ancho del contenedor en pantallas pequeñas */
+        padding: 15px;
+    }
+
+    .post-username {
+        font-size: 16px;
+    }
+
+    .post-date {
+        font-size: 10px;
+    }
+
+    .post-content h3 {
+        font-size: 20px;
+    }
+
+    .post-content p {
+        font-size: 16px; /* Aumenta un poco el tamaño de la letra en pantallas pequeñas */
+    }
+
+    .project-img-container {
+        max-width: 350px;
+    }
+
+    .post-img {
+        max-height: 500px;
+    }
+
+    .post-icon {
+        width: 18px; /* Ajusta el tamaño del ícono en pantallas pequeñas */
+        height: 18px;
+    }
+
+    .footer-text {
+        font-size: 10px; /* Reduce aún más el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .post-container {
+        width: 95%; /* Ajusta el ancho del contenedor en pantallas muy pequeñas */
+        padding: 10px;
+    }
+
+    .post-username {
+        font-size: 14px;
+    }
+
+    .post-date {
+        font-size: 8px;
+    }
+
+    .post-content h3 {
+        font-size: 18px;
+    }
+
+    .post-content p {
+        font-size: 14px; /* Aumenta un poco el tamaño de la letra en pantallas muy pequeñas */
+    }
+
+    .project-img-container {
+        max-width: 300px;
+    }
+
+    .post-img {
+        max-height: 400px;
+    }
+
+    .post-icon {
+        width: 16px; /* Ajusta el tamaño del ícono en pantallas muy pequeñas */
+        height: 16px;
+    }
+
+    .footer-text {
+        font-size: 8px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

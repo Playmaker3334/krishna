@@ -1,0 +1,513 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #16191d;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-y: auto;
+}
+
+.profile-container {
+    position: relative;
+    width: 50%;
+    background-color: #16191d;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 60px auto 20px auto;
+}
+
+.background-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profile-img-container {
+    position: absolute;
+    top: 170px;
+    left: 15%; /* Ajusta el valor para alinear con los detalles del perfil */
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.profile-details {
+    padding-top: 68px; /* Ajusta este valor para mover la descripción */
+    text-align: left;
+    margin-left: 15%;
+}
+
+.profile-details h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.description {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.follow-btn {
+    background-color: #bc0780;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 270px;
+    left: 85%;
+    transform: translateX(-50%);
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.follow-btn:hover {
+    background-color: #9a065f; /* Rosa un poquito más oscuro */
+}
+
+.additional-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #868e96;
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+.additional-info span {
+    display: flex;
+    align-items: center;
+}
+
+.additional-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.additional-info span:nth-child(2) {
+    color: #bc0780;
+}
+
+.subscription-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subscription-form {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.subscription-form input {
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    width: 200px;
+    color: white;
+    background-color: black;
+    border-radius: 25px 0 0 25px;
+}
+
+.subscription-form input:focus {
+    border: none;
+    outline: none;
+}
+
+.subscription-form button {
+    background-color: #bc0780;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.subscription-form button:hover {
+    background-color: #9a065f; /* Rosa un poquito más oscuro */
+}
+
+.confirmation-message {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #bc0780;
+}
+
+.no-spam {
+    margin-top: 10px;
+    font-size: 0.75rem;
+    color: #868e96;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .background-img {
+        height: 200px;
+    }
+
+    .profile-img-container {
+        top: 140px;
+        left: 10%; /* Alinhado mais para a esquerda */
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-details {
+        padding-top: 60px;
+        margin-left: 10%; /* Alinhado mais para a esquerda */
+        text-align: left; /* Alinhado à esquerda */
+    }
+
+    .profile-details h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9rem; /* Reduzir o tamanho da fonte da descrição */
+    }
+
+    .bio {
+        font-size: 0.9rem; /* Reduzir o tamanho da fonte da bio */
+    }
+
+    .follow-btn {
+        top: 200px;
+        left: 80%;
+        transform: translateX(-50%);
+        padding: 7px 15px;
+        font-size: 0.9rem;
+    }
+
+    .additional-info {
+        flex-direction: column;
+        align-items: flex-start; /* Alinhado à esquerda */
+        justify-content: flex-start;
+    }
+
+    .subscription-container p {
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+
+    .subscription-form {
+        width: 80%; /* Ajusta el ancho del formulario en pantallas pequeñas */
+        margin: 0 auto; /* Centra el formulario */
+    }
+
+    .subscription-form input {
+        padding: 8px; /* Ajusta el padding del input */
+    }
+
+    .subscription-form button {
+        padding: 8px 15px; /* Ajusta el padding del botón */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .navigation {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        text-align: left; /* Alinea el contenido a la izquierda */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        width: 100%;
+    }
+
+    .background-img {
+        height: 150px;
+    }
+
+    .profile-img-container {
+        top: 100px;
+        left: 10%; /* Alinhado mais para a esquerda */
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-details {
+        padding-top: 50px;
+        margin-left: 10%; /* Alinhado mais para a esquerda */
+        text-align: left; /* Alinhado à esquerda */
+    }
+
+    .profile-details h1 {
+        font-size: 1.75rem;
+    }
+
+    .description {
+        font-size: 0.85rem; /* Reduzir o tamanho da fonte da descrição */
+    }
+
+    .bio {
+        font-size: 0.85rem; /* Reduzir o tamanho da fonte da bio */
+    }
+
+    .follow-btn {
+        top: 180px;
+        left: 80%;
+        transform: translateX(-50%);
+        padding: 6px 12px; /* Ajuste el padding del botón para que sea más pequeño */
+        font-size: 0.8rem; /* Ajuste el tamaño de la fuente */
+    }
+
+    .additional-info {
+        flex-direction: column;
+        align-items: flex-start; /* Alinhado à esquerda */
+        justify-content: flex-start;
+    }
+
+    .subscription-container p {
+        font-size: 0.8rem; /* Reducir tamaño del texto */
+    }
+
+    .subscription-form {
+        width: 100%;
+        margin: 0 auto; /* Centra el formulario */
+    }
+
+    .subscription-form input {
+        padding: 8px; /* Ajusta el padding del input */
+    }
+
+    .subscription-form button {
+        padding: 8px 15px; /* Ajusta el padding del botón */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+        width: 100%; /* Ocupa todo el ancho del contenedor */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .navigation {
+        width: 100%; /* Ocupa todo el ancho de la pantalla */
+        text-align: left; /* Alinea el contenido a la izquierda */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+    }
+}
+
+.navigation {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #868e96;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 10px; /* Reducir padding */
+    border-radius: 0; /* Remover bordes redondeados */
+    transition: background-color 0.3s;
+    flex: 1;
+    text-align: center;
+    height: 30px; /* Reducir altura del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    color: white;
+    background-color: #1e2228;
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #bc0780;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.nav-item.active::after {
+    opacity: 1;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%; /* Hacer que el enlace ocupe todo el contenedor */
+    height: 100%; /* Hacer que el enlace ocupe toda la altura del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

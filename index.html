@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script type="text/javascript" src="config.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div class="top-rectangle" aria-hidden="true"></div>
+    <div class="profile-container">
+        <div class="header-space"></div>
+        <img src="images/background.jpg" alt="Background Image" class="background-img" loading="lazy">
+        <div class="profile-img-container">
+            <img src="images/new_profile_picture.jpeg" alt="Profile Picture of Krishna Sandoval" class="profile-img" loading="lazy">
+        </div>
+        <div class="profile-details">
+            <h1>Krishna Sandoval</h1>
+            <p class="description">Crafting insights. Always learning. 💡</p>
+            <p class="bio">Data Scientist. Creative Developer. Machine Learning Enthusiast. Bilingual. Junior Developer.</p>
+            <div class="additional-info">
+                <span><img src="images/available.png" alt="Available Icon" width="20" height="20"> Available</span>
+                <span><img src="images/links1.png" alt="Links Icon" width="20" height="20"> /links</span>
+                <span><img src="images/birthday.png" alt="Birthday Icon" width="20" height="20"> April 18th</span>
+                <span><img src="images/joined.png" alt="Joined Icon" width="20" height="20"> Joined Jan 2024</span>
+            </div>
+            <a href="https://x.com/maker466290?t=hJHLvsyKnF5hb-7BBcRzzw&s=09" target="_blank" aria-label="Follow Krishna Sandoval">
+                <button class="follow-btn">Follow</button>
+            </a>
+            <div class="subscription-container">
+                <p>If you like my work you can contact me here!</p>
+                <form class="subscription-form" onsubmit="sendEmail(event)">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address" required aria-label="Email Address" autocomplete="email">
+                    <button type="submit">Contact me!</button>
+                </form>
+                <p id="confirmationMessage" class="confirmation-message" style="display: none;"></p>
+                <p class="no-spam">No spam please.</p>
+            </div>
+        </div>
+    </div>
+    <nav class="navigation" role="navigation">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#feed" class="nav-link" onclick="setActive(event, 'feed')">Feed</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" onclick="setActive(event, 'about')">About</a></li>
+            <li class="nav-item"><a href="#tools" class="nav-link" onclick="setActive(event, 'tools')">Tools</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link" onclick="setActive(event, 'projects')">Projects</a></li>
+        </ul>
+    </nav>
+    <div id="content-container"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

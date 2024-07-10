@@ -1,2 +1,2 @@
-# krishna
-My personal website
+# Krishna-portafolio
+This is my personal website

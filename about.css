@@ -1,0 +1,161 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #16191d;
+    margin: 0;
+    padding: 0;
+    color: white;
+    overflow-y: auto;
+}
+
+/* Contenedor de la publicación */
+.post {
+    background-color: #16191d;
+    padding: 20px;
+    margin: 20px auto 40px auto;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* Ajuste de ancho */
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-header h2 {
+    margin: 0;
+    color: white;
+    font-family: 'League Spartan', sans-serif; /* Fuente más atractiva */
+    font-size: 36px; /* Tamaño más grande para "Hello!" */
+}
+
+.emoji {
+    font-size: 24px;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-height: 300px; /* Reducir altura de la imagen */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .post {
+        width: 90%;
+    }
+}
+
+/* Contenedor de la sección "Sobre mí" */
+#about-me {
+    background-color: #16191d;
+    padding: 30px; /* Aumenta el padding para hacerlo más grueso */
+    margin: 40px auto 20px auto; /* Aumentar el margen superior para bajarlo del menú */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* Ajusta el ancho máximo */
+}
+
+#about-me h2 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 36px; /* Tamaño más grande para "Hello!" */
+}
+
+#about-me p {
+    color: white;
+    line-height: 1.6; /* Mejorar la legibilidad */
+    font-family: Arial, sans-serif;
+    font-weight: 400; /* Reducir grosor de la letra */
+    margin-bottom: 1.2em; /* Aumentar espacio entre párrafos */
+}
+
+/* Estilos para el pie de página */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 25px; /* Tamaño ajustado */
+    height: 25px;
+    transition: transform 0.2s; /* Animación para hover */
+}
+
+.footer-icons img:hover {
+    transform: scale(1.2); /* Efecto hover */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-text {
+    font-size: 12px; /* Tamaño de fuente reducido */
+    margin: 5px 0;
+    color: #868e96; /* Mismo color que el resto del texto */
+}
+
+.footer-text a {
+    color: #868e96; /* Color del enlace */
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-icons {
+        gap: 5px; /* Ajuste para móviles */
+    }
+
+    .footer-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-text {
+        font-size: 10px; /* Reduce aún más el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-icons img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .footer-text {
+        font-size: 8px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
