@@ -427,6 +427,7 @@ footer {
     border: 0;
 }
 
+/* Selección de texto en color rosa */
 ::selection {
     background: #bc0780; /* Color de fondo rosa */
     color: white; /* Color del texto */
