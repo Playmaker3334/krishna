@@ -7,10 +7,19 @@ document.addEventListener("DOMContentLoaded", function() {
     loadContent('feed'); // Carga inicial de la sección "feed"
 });
 
+function escapeHtml(unsafe) {
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
 function sendEmail(event) {
     event.preventDefault();
 
-    var userEmail = document.getElementById("email").value;
+    var userEmail = escapeHtml(document.getElementById("email").value);
 
     var templateParams = {
         to_email: userEmail,
@@ -67,7 +76,14 @@ function loadContent(section) {
     fetch(`${encodeURIComponent(section)}.html?v=${new Date().getTime()}`)
         .then(response => response.text())
         .then(data => {
-            contentContainer.innerHTML = data;
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+            while (contentContainer.firstChild) {
+                contentContainer.removeChild(contentContainer.firstChild);
+            }
+            Array.from(doc.body.childNodes).forEach(node => {
+                contentContainer.appendChild(node);
+            });
         })
         .catch(error => {
             console.error('Error loading content:', error);
